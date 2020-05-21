@@ -1,0 +1,76 @@
+.divclick, .divclick:hover{
+                text-decoration: none;
+                color:white;
+                
+            }
+
+
+            .header1{
+                
+                background-image: url('61667.jpg');
+                background-size: cover;
+                background-position: center;
+                font-style: italic;
+                font-weight: bold;
+                color: white;
+
+            }
+           
+
+            #sports {
+                background-image: url('Crew.jpg');
+
+            }
+
+           
+            #vegan {
+                background-image: url('vegan.jfif');                              
+            }
+
+            
+
+            #dog {
+                color: white;
+                background-color: black;
+            }
+
+            #family {
+                background-image: url('Brihu.jpg');
+
+            }
+
+            .idea {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.5;
+                color: white;
+                background-color: blue;
+               
+
+
+            }          
+
+            .idea:hover{
+                opacity: 1;
+            }
+
+          
+
+            .idea:hover .description {
+                font-weight: bold;
+                
+            }
+
+            .tpic{
+                height: 400px;
+                width: auto;
+            }
+
+            .tcomp{
+                color: lightblue;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+            }
+

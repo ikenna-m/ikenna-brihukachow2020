@@ -8,9 +8,15 @@
 
         <style type="text/css">
 
+          
+             .divclick, .divclick:hover{
+                text-decoration: none;
+                color:white;
+                
+            }
 
 
-            #header1{
+            .header1{
                 
                 background-image: url('61667.jpg');
                 background-size: cover;
@@ -51,6 +57,7 @@
                 opacity: 0.5;
                 color: white;
                 background-color: blue;
+               
 
 
             }          
@@ -73,75 +80,91 @@
         </style>    
     </head>
 
-    <header id = "header1", class = "container-fluid">
-        
-           
-
-                    
+    <header class = "header1 container-fluid">      
+                        
 
             <h1> A little bit about me </h1>
-            <h3 id = "name"> Brihu Sundararaman </h3>
-        
+            <h3 id = "name"> Brihu Sundararaman </h3>        
 
     </header>
 
-    <nav>
-        hello world
-    </nav>
+    
 
     <div class = "containter-fluid">
         <h1> My Story </h1>
-        I am an only child. Currently live in Ohio, but have been around to a lot of places. Grew up in Naperville, Illinois and did highschool in Sugar Land, TX. I know, it's a great name.
+            <p>I am an only child. Currently live in Ohio, but have been around to a lot of places. Grew up in Naperville, Illinois and did highschool in Sugar Land, TX. I know, it's a great name. 
+        </p>
+        <div class = "header1">
+            <br> <br>
+        </div>
         <h3> Childhood </h3>
         <div class = "row">
             <div class = "col-6 initialblurb" >
                 I grew up in Naperville. Lots of my childhood is filled with memories of going to the park after school and playing with friends. Those were the good old days. One of my favorite games was playing wall ball against our school wall. I can't imagine how many tennis balls we threw on the roof. Woodchips was another favorite. Just thinking back is nostalgic.
             </div>
-            <div class = "col-6 initialblurb">
-                <img src="steeple.jpg" class="img-fluid img-thumbnail rounded" alt = "my elementary school">
+            <div class = "col-6 initialblurb" id = "initialblurbphoto">
+                <img src="steeple.jpg" class="img-fluid img-thumbnail rounded" alt = "my elementary school" style = "height: 300px;">
             </div>
         </div>
     </div>
-
+    <div class = "header1">
+        <br> <br>
+    </div>
 
     <div class = "container-fluid">
         <div class = "row">
+            
             <div class = "idea col-lg-3 col-sm-6" id = "sports">
-                <h2 class = descriptor> Sports & Athletics </h2>
-                <p class = description>
-                    Some of my favorite sports are rowing and running. I also swam competitevly for 15 years, but after switching to a team that only cared for its prize swimmers, burn't out in a month and quit the competitive swim scene. I moved into running after swimming and ran track & cross country all through highschool. At Yale, I row for lightweight crew and also compete in half-ironmans during off season.                    
-                </p>
-
+                <a class = "divclick" href = "sport.html" target="_blank">              
+                    <h2 class = descriptor> Sports & Athletics </h2>
+                    <p class = description>
+                        Some of my favorite sports are rowing and running. I also swam competitevly for 15 years, but after switching to a team that only cared for its prize swimmers, burn't out in a month and quit the competitive swim scene. I moved into running after swimming and ran track & cross country all through highschool. At Yale, I row for lightweight crew and also compete in half-ironmans during off season.                    
+                    </p>
+                </a>
             </div>
 
-             <div class = "idea col-lg-3 col-sm-6"  id = "vegan">
 
-                <h2 class = descriptor> Being Vegan </h2>
-                <p class = description>
-                    I was a vegetarian my whole life (except for when I was forced to eat chicken-nuggets against my will in kindergarten) and became vegan my sophomore year in college. So far its been great; clean efficient fuel                  
-                </p>
+             <div class = "idea col-lg-3 col-sm-6"  id = "vegan">
+                <a class = "divclick" href = "vegan.html" target="_blank"> 
+                    <h2 class = descriptor> Being Vegan </h2>                
+                    <p class = description>
+                        I was a vegetarian my whole life (except for when I was forced to eat chicken-nuggets against my will in kindergarten) and became vegan my sophomore year in college. So far its been great; clean efficient fuel                  
+                    </p>
+                </a>
 
             </div>
 
              <div class = "idea col-lg-3 col-sm-6" id = "dog" >
-                <h2 class = descriptor> Doggos </h2>
-                <p class = description>
-                 I have one dog. His name is Hugo and he is very cute. I would wager he is the cutest dog of them all. Here is a picture:
+                <a class = "divclick" href = "doggos.html" target="_blank"> 
+                    <h2 class = descriptor> Doggos </h2>
+                    <p class = description>
+                     I have one dog. His name is Hugo and he is very cute. I would wager he is the cutest dog of them all. Here is a picture:
 
-                    <span id = "picturecom"> 
-                        <img src="Hugo.jpg" class="img-fluid img-thumbnail rounded" alt = "My dog Hugo">
-                        -ya really can't get cuter than this 
-                    </span>                   
-                </p>
+                        <span id = "picturecom"> 
+                            <img src="Hugo.jpg" class="img-fluid img-thumbnail rounded" alt = "My dog Hugo">
+                            -ya really can't get cuter than this 
+                        </span>                   
+                    </p>
+                </a>
 
             </div>
 
              <div class = "idea col-lg-3 col-sm-6" id = "family">
-                <h2 class = descriptor> Professional Interests </h2>
-                <p class = description>
-                   
-                                         
-                </p>
+                <a class = "divclick" href = "professional.html" target="_blank"> 
+                    <h2 class = "descriptor"> Professional Interests </h2>
+                    <h4 class = "descriptor"> Here are some of my interests </h6>
+                    <ul class = "description">
+                        <li> Software development </li>
+                        <li> Entrepreneurship </li>
+                        <li> Professional Triathlon </li>
+                        <li> Topics in Cancer Biology
+
+                            <h6 class = "descriptor"> &emsp; &emsp; Shoutout to Dean Chang </h6>
+                        </li>
+                    </ul>
+                </a>
+
+
 
             </div>
         
