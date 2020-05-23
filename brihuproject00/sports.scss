@@ -1,0 +1,66 @@
+$sports: grey;
+$font : italic;
+
+%header {
+	color: white;
+	background-color: black;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+%odd1 {
+	color: white;
+	background-color: darkblue;
+	font-weight: bold;
+
+}
+
+%even1 {
+	color: darkblue;
+	background-color: white;
+	font-weight: bold
+}
+
+.right-al{
+	border: 2px $sports double;
+	ul{
+		border: 3px $sports;
+		border-style: groove;
+		li{
+			padding-bottom: 30px;
+		}
+	}
+}
+
+
+
+
+
+
+
+.spoor{
+	 @extend %header;
+
+	h3{
+		font-style: $font;
+	}
+
+	h4{
+		font-style: $font;
+	}
+
+	p{
+		font-style: $font;
+	}
+
+	.odd {
+		@extend .right-al, %odd1;
+		
+	} 
+
+	.even {
+		@extend .right-al, %even1;
+	}
+
+
+}

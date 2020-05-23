@@ -1,0 +1,102 @@
+.divclick, .divclick:hover{
+                text-decoration: none;
+                color:white;
+                
+            }
+
+
+            .header1{
+                
+                background-image: url('61667.jpg');
+                background-size: cover;
+                background-position: center;
+                font-srmtyle: italic;
+                font-weight: bold;
+                color: white;
+
+            }
+           
+
+            #sports {
+                background-image: url('Crew.jpg');
+
+            }
+
+           
+            #vegan {
+                background-image: url('vegan.jfif');                              
+            }
+
+            
+
+            #dog {
+                color: white;
+                background-color: black;
+            }
+
+            #family {
+                background-image: url('Brihu.jpg');
+
+            }
+
+            .idea {
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.5;
+                color: white;
+                background-color: blue;
+               
+
+
+            }          
+
+            .idea:hover{
+                opacity: 1;
+            }
+
+          
+
+            .idea:hover .description {
+                font-weight: bold;
+                
+            }
+
+            
+
+            .tcomp{
+                color: lightblue;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .picturelist {
+                list-style-type: none;
+                margin-left:0px;
+                padding-left:200px; 
+                display: inline-block;
+                
+            }
+            
+            .picturelist img{
+                
+                float: left;  
+                height: 300px;  
+                width: 300px ;      
+
+
+            }
+
+            .picturelist p {
+                text-align: left; 
+                display:inline-block;
+                padding: 0;
+            }
+
+           
+            .over{
+                overflow-x: scroll;
+            }
+            
+

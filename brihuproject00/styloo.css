@@ -1,0 +1,30 @@
+.home::before {
+  content: "Click here to go home:";
+  color: blue;
+}
+
+@media (max-width: 450px) {
+  .tpic {
+    height: 50px;
+    width: auto;
+  }
+}
+@media (min-width: 451px) and (max-width: 699px) {
+  .tpic {
+    height: 200px;
+    width: auto;
+  }
+}
+@media (min-width: 700px) {
+  .tpic {
+    height: 400px;
+    width: auto;
+  }
+}
+.row .descriptor {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/*# sourceMappingURL=styloo.css.map */

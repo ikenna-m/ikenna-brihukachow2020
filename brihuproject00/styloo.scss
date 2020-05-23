@@ -1,0 +1,41 @@
+$bpS: 450px;
+$bpM: 700px;
+
+.home::before {
+	content: "Click here to go home:";
+	color: blue;
+}
+
+@media (max-width: $bpS){
+	.tpic {
+		height: 50px;
+		width: auto;
+	}
+}
+
+@media (min-width: 451px) and (max-width: 699px){
+	.tpic {
+		height: 200px;
+		width: auto;
+	}
+}
+
+@media (min-width: $bpM){
+	.tpic {
+		height: 400px;
+		width: auto;
+	}
+}
+
+.row {
+	
+	.descriptor{
+		
+		font-style: italic;
+		font-weight: bold;
+		font-size: 22px
+	}
+
+
+	
+}

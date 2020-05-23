@@ -1,0 +1,41 @@
+.spoor {
+  color: white;
+  background-color: black;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.spoor .odd {
+  color: white;
+  background-color: darkblue;
+  font-weight: bold;
+}
+
+.spoor .even {
+  color: darkblue;
+  background-color: white;
+  font-weight: bold;
+}
+
+.right-al, .spoor .even, .spoor .odd {
+  border: 2px grey double;
+}
+.right-al ul, .spoor .even ul, .spoor .odd ul {
+  border: 3px grey;
+  border-style: groove;
+}
+.right-al ul li, .spoor .even ul li, .spoor .odd ul li {
+  padding-bottom: 30px;
+}
+
+.spoor h3 {
+  font-style: italic;
+}
+.spoor h4 {
+  font-style: italic;
+}
+.spoor p {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=sports.css.map */
