@@ -10,7 +10,7 @@
                 background-image: url('61667.jpg');
                 background-size: cover;
                 background-position: center;
-                font-style: italic;
+                font-srmtyle: italic;
                 font-weight: bold;
                 color: white;
 
@@ -62,10 +62,7 @@
                 
             }
 
-            .tpic{
-                height: 400px;
-                width: auto;
-            }
+            
 
             .tcomp{
                 color: lightblue;
@@ -73,4 +70,33 @@
                 font-weight: bold;
                 text-align: center;
             }
+
+            .picturelist {
+                list-style-type: none;
+                margin-left:0px;
+                padding-left:200px; 
+                display: inline-block;
+                
+            }
+            
+            .picturelist img{
+                
+                float: left;  
+                height: 300px;  
+                width: 300px ;      
+
+
+            }
+
+            .picturelist p {
+                text-align: left; 
+                display:inline-block;
+                padding: 0;
+            }
+
+           
+            .over{
+                overflow-x: scroll;
+            }
+            
 
