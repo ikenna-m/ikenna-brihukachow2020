@@ -1,0 +1,42 @@
+$import-color: rgb(22, 13, 37);
+
+@media (min-width: 500px) {
+
+}
+@media (max-width: 499px) {
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+div {
+    color: $import-color;
+    h3 {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    p {
+        font-size: 12pt;
+    }
+}
+ol {
+    font-size: 11pt;
+}
+.wentin {
+    @extend ol;
+    font-style: italic;
+    background-color: rgb(226, 240, 232)
+}
+img {
+    display: block;
+    float: left;
+}
+.table-pic {
+    display: inline-table;
+    width: auto;
+    height: 20%;
+}
+#emoji {
+    font-size: 100px;
+}
