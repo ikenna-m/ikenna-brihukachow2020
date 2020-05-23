@@ -1,10 +1,14 @@
 $import-color: rgb(22, 13, 37);
 
-@media (min-width: 500px) {
-
+@media (min-width: 700px) {
+    body {
+        background-color: rgb(218, 218, 248);
+    }
 }
-@media (max-width: 499px) {
-
+@media (max-width: 699px) {
+    body {
+        background-color: rgb(245, 200, 217);
+    }
 }
 .container {
     display: flex;
@@ -26,14 +30,17 @@ ol {
 .wentin {
     @extend ol;
     font-style: italic;
-    background-color: rgb(226, 240, 232)
+    color: rgb(46, 66, 50)
 }
 img {
     display: block;
     float: left;
+    opacity: 0.75;
+}
+img:hover {
+    opacity: 1.0;
 }
 .table-pic {
-    display: inline-table;
     width: auto;
     height: 20%;
 }
