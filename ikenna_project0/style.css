@@ -5,7 +5,7 @@
 }
 @media (max-width: 699px) {
   body {
-    background-color: #f5c8d9;
+    background-color: #f0d2cd;
   }
 }
 .container {
@@ -30,7 +30,7 @@ ol, .wentin {
 
 .wentin {
   font-style: italic;
-  color: #2e4232;
+  color: #219166;
 }
 
 img {

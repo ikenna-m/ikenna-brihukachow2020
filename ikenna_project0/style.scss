@@ -7,7 +7,7 @@ $import-color: rgb(22, 13, 37);
 }
 @media (max-width: 699px) {
     body {
-        background-color: rgb(245, 200, 217);
+        background-color: rgb(240, 210, 205);
     }
 }
 .container {
@@ -30,7 +30,7 @@ ol {
 .wentin {
     @extend ol;
     font-style: italic;
-    color: rgb(46, 66, 50)
+    color: rgb(33, 145, 102)
 }
 img {
     display: block;
