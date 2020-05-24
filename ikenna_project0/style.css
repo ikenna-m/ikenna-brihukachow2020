@@ -1,0 +1,55 @@
+@media (min-width: 700px) {
+  body {
+    background-color: #dadaf8;
+  }
+}
+@media (max-width: 699px) {
+  body {
+    background-color: #f0d2cd;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  color: #160d25;
+}
+div h3 {
+  font-size: 14pt;
+  font-weight: bold;
+}
+div p {
+  font-size: 12pt;
+}
+
+ol, .wentin {
+  font-size: 11pt;
+}
+
+.wentin {
+  font-style: italic;
+  color: #219166;
+}
+
+img {
+  display: block;
+  float: left;
+  opacity: 0.75;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.table-pic {
+  width: auto;
+  height: 20%;
+}
+
+#emoji {
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
