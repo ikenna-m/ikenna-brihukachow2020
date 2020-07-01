@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Good Book Reviews
+{% endblock %}
+
+{% block body %}
+    {{ msg }}
+    <h1>Login or Register Here</h1>
+    <div class="row">
+        <div class="col">
+            <h3>Login Here!</h3> 
+            <form action="{{ url_for('login') }}" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button>Login!</button>
+            </form>
+        </div>
+        <div class="col">
+            <h3>New User? Register Here!</h3>
+            <form action="{{ url_for('registration') }}" method="post">
+                <input type="text" name="fname" placeholder="First name">
+                <br>
+                <input type="text" name="username" placeholder="Username">
+                <br>
+                <input type="password" name="password" placeholder="Password">
+                <br>
+                <button>Register!</button>
+            </form>
+        </div>
+      </div>
+{% endblock %}

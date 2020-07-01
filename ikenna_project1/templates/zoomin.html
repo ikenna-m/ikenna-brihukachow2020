@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {{ book.title }}
+{% endblock %}
+
+{% block body %}
+
+{% if message != None %}
+{{ message }}
+{% endif %}
+
+    <h1>Book Details</h1>
+
+    <ul>
+        <li>Title: {{ book.title }}</li>
+        <li>Author: {{ book.author }}</li>
+        <li>ISBN: {{ book.isbn }}</li>
+        <li>Year: {{ book.year }}</li>
+    </ul>
+<br>
+
+
+<h3>Review this book!</h3>
+<form action="{{ url_for('review', book=book.id) }}", method="post">
+    <label for="rating">Rate this book from 1 to 5:</label>
+    <input type="number" name="rating" min="1" max="5" id="rating">
+    <br>
+    <label for="comment">Write your thoughts here:</label> <br>
+    <textarea name="comment" rows="15" cols="40" id="comment"></textarea>
+    <br>
+    <button>Submit Review!</button>
+</form>
+<br>
+
+{% for review in reviews %}
+        {{ review.name }} gave a rating of {{ review.ranking }} out of 5.
+        <br>
+        {{ review.comments }}
+{% endfor %}
+
+<br>
+
+{% if data != None %}
+    Here are some ratings statistics for this book!
+    <ul>
+        <li>Average ratings provided by Goodreads users: {{ data.average_rating }}</li>
+        <li>Number of Goodreads ratings: {{ data.ratings_count }}</li>
+    </ul>
+{% elif data == None %}
+    Goodreads does not have any data to supply for this book.
+{% endif %}
+
+    
+{% endblock %}

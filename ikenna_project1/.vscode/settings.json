@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/Users/ikennamaduno/.pyenv/shims/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": false,
+    "python.linting.flake8Enabled": true
+}

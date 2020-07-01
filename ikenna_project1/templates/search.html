@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Good Book Reviews
+{% endblock %}
+
+{% block body %}
+
+    <h1>Welcome {{ name }}!</h1>
+    <h3>Nice seeing ya! We have a wonderful selection of books, feel free to search to your heart's desire 🥰</h3>
+    
+    Tip: Pick just one(1!) field to search in!
+
+    <form action="{{ url_for('search') }}" method="post">
+        <input type="text" name="title" placeholder="title"> 
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="ISBN" placeholder="ISBN">
+        <button>Search!</button>
+    </form>
+    <br>
+
+    {% if info == None %}
+        Sorry, it looks like there are no books in our database that match your query.
+    {% elif info != None %}
+        <ul>
+        {% for result in info %}
+            <li>
+                <a href="{{ url_for('zoomin', book_id=result.id) }}"> 
+                {{ result.title }}, by {{ result.author }}
+                </a>
+            </li>
+        </ul>
+        {% endfor %}
+    {% endif %}
+   
+{% endblock %}

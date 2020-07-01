@@ -1,0 +1,5 @@
+# Project 1
+
+Web Programming with Python and JavaScript
+
+For this project, I made a rudimentary book reviewing site. In the templates folders, I have all of my HTML templates, including a layout that the rest draw from, a home page in the index, a page where users can register or login to their accounts, a page where logged in users can search within the book database and see the results, and a page called zoomin that shows the book details along with a place to provide reviews and see reviews. In the main folder, import.py imports the books.csv dataset, codeusedtomakeothertables.sql contains the code I used to make my peeps (users) and reviews tables, and intersection.py contains the function I use in my search to get the intersection of search results resulting from terms in my different search fields. My application.py contains all of the Flask work that drives my site. Nothing was added to the requirements.txt.

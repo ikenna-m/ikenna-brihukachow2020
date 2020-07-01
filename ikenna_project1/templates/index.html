@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Good Book Reviews
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome to my Book Review Site!</h1>
+    Here we prioritize quality in how we evaluate the media we choose to consume. Given this, our database is access is restricted to our registered users. Don't worry - it is free to register!
+    <br>
+    We hope you enjoy your visit. To login or register, just follow <a href="{{ url_for('loginregister') }}">this link</a>.
+{% endblock %}
